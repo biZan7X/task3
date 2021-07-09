@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit">
+    <h1>Registration Form</h1>
+        <div>
+            <span class="labeled">
+            <label for="userid">User id: </label>
+            </span>
+            <span>
+            <input type="text" id="userid" required minlength="5" maxlength="12">
+            </span>
+        </div>
+        <div>
+            <span class="labeled">
+            <label for="password">password: </label>
+            </span>
+            <span>
+            <input type="password" id="password" required minlength="7" maxlength="12">
+            </span>
+        </div>
+        <div>
+            <span class="labeled">
+            <label for="name">name: </label>
+            </span>
+            <span class="inpts">
+            <input type="text" id="name" required pattern="[A-Za-z ]{1,}">
+            </span>
+        </div>
+        <div>
+            <span class="labeled">
+            <label for="address">address: </label>
+            </span>
+            <span class="inpts">
+            <input type="text" id="address">
+            </span>
+        </div>
+        <div>
+            <span class="labeled">
+            <label for="country">country: </label>
+            </span>
+            <span class="inpts">
+            <select id="country">
+                <option default="">Please select a country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+            </select>
+            </span>
+        </div>
+        <div>
+            <span class="labeled">
+            <label for="zip">zip code: </label>
+            </span>
+            <span class="inpts">
+            <input type="number" id="zip" required>
+            </span>
+        </div>
+        <div>
+            <span class="labeled">
+            <label for="email">email: </label>
+            </span>
+            <span class="inpts">
+            <input type="email" id="email" required>
+            </span>
+        </div>
+        <div>
+            <span class="labeled">
+            <label for="sex">sex: </label>
+            </span>
+            <span class="inpts">
+            <input type="radio" name="sex" required> Male
+            <input type="radio" name="sex" required> Female
+            </span>
+        </div>
+        <div>
+            <span class="labeled">
+            <label for="language">language: </label>
+            </span>
+            <span class="inpts">
+            <input type="checkbox" name="language" required> english
+            <input type="checkbox" name="language"> non english
+            </span>
+        </div>
+        <div>
+            <span class="labeled">
+            <label for="about">about: </label>
+            </span>
+            <span class="final">
+            <input type="text" id="about">
+            </span>
+        </div>
+        <div>
+            <span class="labeled">
+            <label for="language"></label>
+            </span>
+            <span class="inpts">
+            <button type="submit">submit</button>
+            </span>
+        </div>
+
+    </form>
+</body>
+</html>
